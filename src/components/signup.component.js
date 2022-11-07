@@ -4,13 +4,10 @@ const url =
   "https://www.vegvesen.no/ws/no/vegvesen/kjoretoy/felles/datautlevering/enkeltoppslag/kjoretoydata?kjennemerke=LJ37201";
 fetch(url, {
   method: "GET",
+  Authorization: "d02538ad-056a-41c8-8f02-f860f23c50eb",
   withCredentials: true,
   headers: {
-    "Access-Control-Allow-Headers":
-      "Origin, Content-Type, X-Auth-Token, Authorization",
-    "Access-Control-Allow-Credentials": "true",
-    "SVV-Authorization": "d02538ad-056a-41c8-8f02-f860f23c50eb",
-    "Content-Type": "application/json",
+    // "Content-Type": "application/json",
   },
 })
   .then((resp) => resp.json())
