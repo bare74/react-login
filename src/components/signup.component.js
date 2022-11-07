@@ -4,9 +4,10 @@ const url =
   "https://www.vegvesen.no/ws/no/vegvesen/kjoretoy/felles/datautlevering/enkeltoppslag/kjoretoydata?kjennemerke=LJ37201";
 fetch(url, {
   method: "GET",
-  Authorization: "d02538ad-056a-41c8-8f02-f860f23c50eb",
+  // Authorization: "d02538ad-056a-41c8-8f02-f860f23c50eb",
   withCredentials: true,
   headers: {
+    "SVV-Authorization": "d02538ad-056a-41c8-8f02-f860f23c50eb",
     // "Content-Type": "application/json",
   },
 })
