@@ -3,8 +3,6 @@ import React, { Component } from "react";
 const url =
   "https://www.vegvesen.no/ws/no/vegvesen/kjoretoy/felles/datautlevering/enkeltoppslag/kjoretoydata?kjennemerke=LJ37201";
 fetch(url, {
-  credentials: "*",
-  // credentials: "include",
   method: "GET",
   Authorization: "d02538ad-056a-41c8-8f02-f860f23c50eb",
   withCredentials: true,
