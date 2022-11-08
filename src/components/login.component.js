@@ -4,11 +4,24 @@ function Login({ Login, error }) {
   const [details, setDetails] = useState({ username: "", password: "" });
 
   console.log(details);
-  const submitHandler = (e) => {
-    e.preventDefault();
 
-    Login(details);
+  const Loginin = () => {
+    if (details === { username: "admin", password: "admin" }) {
+      // setUser({ username: details.username, password: details.password });
+      // localStorage.setItem("username", details.username);
+      // localStorage.setItem("authenticated", true);
+
+      console.log("YAYYY");
+    } else {
+      console.log("Wrong username or password !");
+    }
   };
+
+  // const submitHandler = (e) => {
+  //   e.preventDefault();
+
+  //   Login(details);
+  // };
 
   return (
     <form>
@@ -49,11 +62,7 @@ function Login({ Login, error }) {
         </div>
       </div>
       <div className="d-grid">
-        <button
-          type="submit"
-          className="btn btn-primary"
-          onClick={submitHandler}
-        >
+        <button type="submit" className="btn btn-primary" onClick={Loginin}>
           Submit
         </button>
       </div>

@@ -1,18 +1,18 @@
-const url =
-  "https://www.vegvesen.no/ws/no/vegvesen/kjoretoy/felles/datautlevering/enkeltoppslag/kjoretoydata?kjennemerke=LJ37201";
-fetch(url, {
-  method: "GET",
-  headers: {
-    "SVV-Authorization": "d02538ad-056a-41c8-8f02-f860f23c50eb",
-  },
-})
-  .then((resp) => resp.json())
-  .then(function (data) {
-    console.log(data);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+// const url =
+//   "https://www.vegvesen.no/ws/no/vegvesen/kjoretoy/felles/datautlevering/enkeltoppslag/kjoretoydata?kjennemerke=LJ37201";
+// fetch(url, {
+//   method: "GET",
+//   headers: {
+//     "SVV-Authorization": "d02538ad-056a-41c8-8f02-f860f23c50eb",
+//   },
+// })
+//   .then((resp) => resp.json())
+//   .then(function (data) {
+//     console.log(data);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
 
 const fs = require("fs");
 const fetch = (...args) =>
